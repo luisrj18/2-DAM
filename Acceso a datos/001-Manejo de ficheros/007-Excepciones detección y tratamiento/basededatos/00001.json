@@ -1,0 +1,13 @@
+{
+    "nombre": "Jos\u00e9 Luis",
+    "apellidos": "Rojas Jim\u00e9nez",
+    "emails": {
+        "personal": [
+            "luisroji.10@gmail.com"
+        ],
+        "profesional": [
+            "info@luisrojasjimenez.com",
+            "info@luisroji.com"
+        ]
+    }
+}

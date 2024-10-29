@@ -1,0 +1,1 @@
+INSERT INTO `clientes` (`Identificador`, `nombre`, `apellidos`, `email`, `direccion`, `cp`, `poblacion`, `pais`) VALUES (NULL, 'Luis', 'Rojas', 'luisroji@correo.com', 'La calle de Luis', '41001', 'Sevilla', 'España');

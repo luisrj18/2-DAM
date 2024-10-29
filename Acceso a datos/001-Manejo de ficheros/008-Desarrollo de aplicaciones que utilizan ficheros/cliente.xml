@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<cliente><nombre>Manuel</nombre><apellidos>Garcia</apellidos><emails>{'personal': 'manugar@gmail.com', 'profesional': 'info@manugar.com'}</emails></cliente>

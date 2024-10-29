@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input id="rangeInput" type="range" min="0" max="10" value="0">
+    
+    <style>
+      /*********** Estilos básicos y de reinicio ***********/
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+      }
+
+      /* Elimina el foco predeterminado */
+      input[type="range"]:focus {
+        outline: none;
+      }
+
+      /******** Estilos para Chrome, Safari, Opera y Edge Chromium ********/
+      /* pista del deslizador */
+      input[type="range"]::-webkit-slider-runnable-track {
+        background-color: #add8e6;
+        border-radius: 5rem;
+        height: 1rem;
+        outline: none;
+      }
+
+      /* control del deslizador */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        margin-top: 0px; /* Centra el control en la pista */
+        background-color: #808080;
+        border-radius: 1rem;
+        height: 1rem;
+        width: 50px; /* Establece el ancho inicial aquí */
+        transition: width 0.3s ease; /* Añade una transición para un efecto suave */
+      }
+
+      /* Control del deslizador enfocado */
+      input[type="range"]:focus::-webkit-slider-thumb {
+        outline: 3px solid #808080;
+        outline-offset: 0.125rem;
+      }
+
+      /* Clase para el control más grande */
+      .large-thumb::-webkit-slider-thumb {
+        width: 100px; /* Ancho mayor del control */
+      }
+
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const rangeInput = document.getElementById('rangeInput');
+        
+        // Establece el ancho del deslizador al 50% o al valor deseado
+        rangeInput.style.width = "50%"; // Ajusta este valor para cambiar el ancho
+      });
+    </script>
+  </body>
+</html>

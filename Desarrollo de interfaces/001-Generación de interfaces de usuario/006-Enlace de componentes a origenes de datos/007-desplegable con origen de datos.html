@@ -1,0 +1,29 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <select id="personas">
+      <option>Selecciona a una persona</option>
+    </select>
+    
+    <script>
+      // Realiza una solicitud para obtener datos del archivo "personas.json"
+      fetch("personas.json")
+        // Convierte la respuesta a formato JSON
+        .then(response => response.json())
+        .then(function(response) {
+          console.log(response); // Muestra en consola el objeto JSON recibido para ver los datos
+          
+          // Itera sobre cada elemento en la propiedad "personas" del objeto JSON
+          response['personas'].forEach(function(currentValue) {
+            // Crea una nueva opción para el elemento "select"
+            let option = document.createElement("option");
+            // Asigna el texto del nombre de la persona al nuevo elemento "option"
+            option.textContent = currentValue;
+            // Añade la opción al menú desplegable
+            document.querySelector("#personas").appendChild(option);
+          });
+        });
+    </script>
+  </body>
+</html>
