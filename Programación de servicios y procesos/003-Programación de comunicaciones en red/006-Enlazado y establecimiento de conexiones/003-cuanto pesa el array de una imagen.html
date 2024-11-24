@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <canvas></canvas>
+    <script>
+    
+      
+		const lienzo = document.querySelector("canvas")
+		const contexto = lienzo.getContext("2d")
+		lienzo.width = 183
+		lienzo.height = 228
+		
+		let imagen = new Image()
+		imagen.src = "luis.jpg"
+		imagen.onload = function(){
+			contexto.drawImage(imagen,0,0)
+			const inicial = performance.memory.usedJSHeapSize;
+			const coleccion = contexto.getImageData(0,0,183,228).data
+		   setTimeout(() => {
+		     const final = performance.memory.usedJSHeapSize;
+		     let memoriaUtilizada = final - inicial;
+		     console.log(memoriaUtilizada);
+		     console.log(coleccion)
+		   }, 100);
+		   
+		}
+		
+		
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+
+
+Al usuarioLuis le ha tocado la tarea: bbb
+
+Al usuarioLuis le ha tocado la tarea:     [635, 485, 546, 58, 64, 68, 655, 4654, 3213, 48886, 324, 5453, 8785]
+
+Al usuarioLuis le ha tocado la tarea:     [123, 546, 789, 456, 321, 654, 987, 147, 258, 369, 753, 951, 852]
+
+Al usuarioLuis le ha tocado la tarea:     [657, 321, 456, 789, 123, 963, 852, 741, 357, 951, 741, 456, 852]
+
+Al usuarioLuis le ha tocado la tarea:     [987, 654, 321, 432, 543, 654, 765, 876, 987, 876, 765, 654, 543]
+

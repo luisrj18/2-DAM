@@ -1,4 +1,4 @@
-## pip install SpeechRecognition
+# pip install SpeechRecognition
 # pip install pyaudio
 
 import speech_recognition as sr                                             # Importamos la librería de reconocimiento de voz                              
@@ -25,7 +25,7 @@ def reconocer():                                                            # cr
                 print("operación de insertar reconocida, vamos a inserar un nuevo registro")
             elif text == "listar":
                 print("operación de listar reconocida, vamos a por la lista de clientes")
-            elif text == "actualizr":
+            elif text == "actualizar":
                 print("operación de actualizar reconocida, vamos a actualizar un cliente")
             elif text == "eliminar":
                 print("operación de listar reconocida, vamos a eliminar un cliente")

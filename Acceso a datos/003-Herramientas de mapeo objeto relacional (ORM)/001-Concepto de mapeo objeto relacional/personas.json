@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Luis",
+        "apellidos": "Rojas Jimenez",
+        "edad": 36,
+        "emails": [
+            {
+                "tipo": "personal",
+                "valor": "luisroji@correo.com"
+            },
+            {
+                "tipo": "trabajo",
+                "valor": [
+                    "info@luisroji.com",
+                    "luroji@gmail.com"
+                ]
+            }
+        ]
+    }
+]
