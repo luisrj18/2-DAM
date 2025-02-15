@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root>
+  <staticData>
+    <customerName>carlos</customerName>
+    <Apellidos>mero</Apellidos>
+    <Email>carlos@correo.com</Email>
+  </staticData>
+  <dynamicData/>
+</root>
