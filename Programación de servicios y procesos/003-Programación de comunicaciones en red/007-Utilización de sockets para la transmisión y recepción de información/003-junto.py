@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Configuración de la cuenta
-username = "dam@jocarsa.com"
+username = "dam@luroji.com"
 password = "TAME123$"
 imap_server = "imap.ionos.es"
 smtp_server = "smtp.ionos.es"  
@@ -41,4 +41,4 @@ def enviar(desde,para,asunto,mensaje):
 def recibir():
     pass
     
-enviar("dam@jocarsa.com","info@josevicentecarratala.com","asunto desde Python","Este es un mensaje que te envio")
+enviar("dam@luroji.com","luisroji.10@gmail.com","asunto desde Python","Este es un mensaje que te envio")

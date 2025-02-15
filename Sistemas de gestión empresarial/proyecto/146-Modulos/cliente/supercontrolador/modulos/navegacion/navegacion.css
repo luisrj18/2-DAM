@@ -1,0 +1,12 @@
+nav ul{
+  list-style-type:none;
+  padding:0px;
+}
+nav ul li{
+  padding:15px;
+  cursor:pointer;
+}
+main nav{
+  width:20%;
+  height:100%;
+}

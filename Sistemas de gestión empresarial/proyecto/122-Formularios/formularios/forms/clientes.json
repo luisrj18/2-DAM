@@ -1,0 +1,14 @@
+[
+	{
+		"nombre":"Nombre",
+		"tipo":"text",
+		"min":5,
+		"max":30
+	},
+	{
+		"nombre":"Apellidos",
+		"tipo":"text",
+		"min":5,
+		"max":30
+	}
+]

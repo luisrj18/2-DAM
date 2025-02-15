@@ -1,0 +1,18 @@
+-Gestión de Clientes:
+
+Registrar nuevos clientes.
+Editar información existente.
+Eliminar clientes obsoletos.
+Buscar clientes mediante filtros avanzados.
+
+-Gestión de Productos:
+
+Agregar productos con descripciones detalladas.
+Modificar stock y precios.
+Eliminar productos no disponibles.
+
+-Gestión de Pedidos:
+
+Crear nuevos pedidos con información detallada.
+Asociar pedidos con clientes y productos.
+Gestionar estados de los pedidos (pendiente, en proceso, completado).

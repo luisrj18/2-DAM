@@ -36,7 +36,7 @@ def enviar_mensajes(cliente):
 
 # Configuración del cliente
 cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-cliente.connect(('5.250.188.70', 3000))  # Me conecto en la dirección y el puerto donde sé que hay un servidor escuchando
+cliente.connect(('212.227.28.192', 9998))  # Me conecto en la dirección y el puerto donde sé que hay un servidor escuchando
 
 # Crear hilos para recibir y enviar mensajes
 thread_recibir = threading.Thread(target=recibir_mensajes, args=(cliente,))

@@ -33,7 +33,7 @@ def handle_client(client_socket, addr):                                         
 
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)                              # Creamos un nuevo servidor de sockets
-server.bind(('5.250.188.70', 9999))                                                        # Especifico ruta y puerto de escucha
+server.bind(('212.227.28.192', 9999))                                                        # Especifico ruta y puerto de escucha
 server.listen(5)                                                                        # Indico el máximo de cola para entrar
 
 print("El servidor esta escuchando en: 9998...")

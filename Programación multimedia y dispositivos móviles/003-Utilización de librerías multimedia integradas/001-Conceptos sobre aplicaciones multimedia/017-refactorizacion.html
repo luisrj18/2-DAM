@@ -61,13 +61,13 @@
 			
 			
 			window.onload = function(){										// ME espero a que todo en la web haya cargado
-				let videos = document.querySelectorAll("video")			// Selecciono todos los videos que me encuentre en la web
+				let videos = document.querySelectorAll("video")			    // Selecciono todos los videos que me encuentre en la web
 				videos.forEach(function(video){								// Para cada uno de los videos que me encuentre
 					
 					let volumen = 1.0
 					
-					let tagvideo = video											// Meto el video en la memoria
-					let contienevideo = document.createElement("div")	// Creo un contenedor
+					let tagvideo = video									// Meto el video en la memoria
+					let contienevideo = document.createElement("div")	    // Creo un contenedor
 					contienevideo.classList.add("jvideo")					// Al contenedor le añado una clase
 					tagvideo.replaceWith(contienevideo);					// Reemplazo el video con el contenedor
 					contienevideo.appendChild(tagvideo)						// Añado el contenedor de video al DOM
@@ -93,21 +93,21 @@
 				
 					/*////////////////////// BOTÓN DE PLAY //////////////////////*/
 					
-					let botonplay = document.createElement("button")	// Creo un boton
-					botonplay.innerHTML = "<img src='play.svg'>"								// Le pongo el icono
+					let botonplay = document.createElement("button")	    // Creo un boton
+					botonplay.innerHTML = "<img src='play.svg'>"			// Le pongo el icono
 					barracontroles.appendChild(botonplay)					// Lo añado al contenedor
-					let estado = "pause"											// Defino el estado original del reproductor
+					let estado = "pause"									// Defino el estado original del reproductor
 					botonplay.onclick = function(){							// Cuando haga click en el boton de play
 						playopausa()
 					}
 					
 					/*////////////////////// BOTÓN DE VOLUMEN MAS //////////////////////*/
 					
-					let botonvolumenmas = document.createElement("button")	// Creo un boton
-					botonvolumenmas.innerHTML = "<img src='volumenmas.svg'>"								// Le pongo el icono
+					let botonvolumenmas = document.createElement("button")	    // Creo un boton
+					botonvolumenmas.innerHTML = "<img src='volumenmas.svg'>"	// Le pongo el icono
 					barracontroles.appendChild(botonvolumenmas)					// Lo añado al contenedor
 					
-					botonvolumenmas.onclick = function(){							// Cuando haga click en el boton de play
+					botonvolumenmas.onclick = function(){						// Cuando haga click en el boton de play
 						if(tagvideo.volume < 1.0){
 							tagvideo.volume += 0.1
 						}
@@ -115,8 +115,8 @@
 					
 					/*////////////////////// BOTÓN DE VOLUMEN MENOS //////////////////////*/
 					
-					let botonvolumenmenos = document.createElement("button")	// Creo un boton
-					botonvolumenmenos.innerHTML = "<img src='volumenmenos.svg'>"								// Le pongo el icono
+					let botonvolumenmenos = document.createElement("button")	    // Creo un boton
+					botonvolumenmenos.innerHTML = "<img src='volumenmenos.svg'>"	// Le pongo el icono
 					barracontroles.appendChild(botonvolumenmenos)					// Lo añado al contenedor
 					
 					botonvolumenmenos.onclick = function(){							// Cuando haga click en el boton de play
@@ -139,18 +139,18 @@
 					
 					/*////////////////////// BOTÓN DE RETROCEDER //////////////////////*/
 					
-					let botonretroceder = document.createElement("button")	// Creo un boton
-					botonretroceder.innerHTML = "<img src='retroceder.svg'>"								// Le pongo el icono
+					let botonretroceder = document.createElement("button")	    // Creo un boton
+					botonretroceder.innerHTML = "<img src='retroceder.svg'>"	// Le pongo el icono
 					barracontroles.appendChild(botonretroceder)					// Lo añado al contenedor
 					
-					botonretroceder.onclick = function(){							// Cuando haga click en el boton de play
+					botonretroceder.onclick = function(){						// Cuando haga click en el boton de play
 						tagvideo.currentTime -= 10
 					}
 					
 					/*////////////////////// BOTÓN DE AVANZAR //////////////////////*/
 					
-					let botonavanzar = document.createElement("button")	// Creo un boton
-					botonavanzar.innerHTML = "<img src='avanzar.svg'>"								// Le pongo el icono
+					let botonavanzar = document.createElement("button")	        // Creo un boton
+					botonavanzar.innerHTML = "<img src='avanzar.svg'>"			// Le pongo el icono
 					barracontroles.appendChild(botonavanzar)					// Lo añado al contenedor
 					
 					botonavanzar.onclick = function(){							// Cuando haga click en el boton de play
@@ -165,13 +165,13 @@
 					
 					function playopausa(){
 						if(estado == "pause"){									// En el caso de que esté en pausa
-							botonplay.innerHTML = "<img src='pause.svg'>"							// Le pongo el boton de pausa
+							botonplay.innerHTML = "<img src='pause.svg'>"		// Le pongo el boton de pausa
 							estado = "play"										// Cambio el estado
 							tagvideo.play()										// Reproduzco el video
-						}else{														// En caso contrario
-							botonplay.innerHTML = "<img src='play.svg'>"							// Le pongo el icono de play
-							estado = "pause"										// Le cambio el estado
-							tagvideo.pause()										// Pauso el video
+						}else{													// En caso contrario
+							botonplay.innerHTML = "<img src='play.svg'>"		// Le pongo el icono de play
+							estado = "pause"									// Le cambio el estado
+							tagvideo.pause()									// Pauso el video
 						}
 					}
 				})

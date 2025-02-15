@@ -1,0 +1,14 @@
+{
+	"titulo":{
+		"contenido":"Sistema de gestión empresarial LUROJI"
+	},
+	"login":{
+		"contenido":"Inicia sesion"
+	},
+	"usuario":{
+		"contenido":"Usuario:"
+	},
+	"contrasena":{
+		"contenido":"Contraseña:"
+	}
+}

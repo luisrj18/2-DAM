@@ -2,8 +2,8 @@ function comprimir(coleccion){
 		
 			//////////////////////	PRIMERO QUITO LA TRANSPARENCIA	//////////////////////
 			
-			const sintransparencia = []																				// Creo un array vacio
-			for(let i = 0;i<coleccion.length;i+=4){																// Para cada pixel
+			const sintransparencia = []																	// Creo un array vacio
+			for(let i = 0;i<coleccion.length;i+=4){														// Para cada pixel
 				sintransparencia.push(coleccion[i]*255*255+coleccion[i+1]*255+coleccion[i+2])			// descarto la transparencia y unifico
 			}
 			

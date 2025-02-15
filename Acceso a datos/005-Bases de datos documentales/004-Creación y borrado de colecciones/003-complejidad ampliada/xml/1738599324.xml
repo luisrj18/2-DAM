@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root>
+  <customerName>Luis</customerName>
+  <invoiceLines>
+    <item0>
+      <description>Producto1</description>
+      <quantity>1</quantity>
+      <price>4</price>
+    </item0>
+    <item1>
+      <description>aaaa</description>
+      <quantity>1</quantity>
+      <price>6</price>
+    </item1>
+  </invoiceLines>
+</root>

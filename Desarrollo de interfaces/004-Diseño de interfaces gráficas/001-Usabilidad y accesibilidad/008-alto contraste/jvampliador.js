@@ -15,14 +15,14 @@
 		document.querySelector("body").style.fontSize = tamanio+"em"
 	}
 	
-	////////////////// AUMENTAR /////////////////
+	////////////////// CONTRASTE /////////////////
 	
 	let contraste = document.createElement("button")
 	contraste.textContent = "C"
 	
 	contenedor.appendChild(contraste)
 	contraste.onclick = function(){
-		cantidadcontraste = 30;
+		cantidadcontraste = 300;
 		document.querySelector("body").style.filter = "contrast("+cantidadcontraste+")"
 	}
 	

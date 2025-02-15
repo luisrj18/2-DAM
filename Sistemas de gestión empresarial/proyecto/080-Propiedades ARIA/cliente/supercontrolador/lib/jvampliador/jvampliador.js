@@ -9,7 +9,7 @@
 	
 	let aumentar = document.createElement("button")
 	aumentar.textContent = "+"
-	 aumentar.setAttribute("aria-label","Ampliar")
+    aumentar.setAttribute("aria-label","Ampliar")
 	
 	contenedor.appendChild(aumentar)
 	aumentar.onclick = function(){

@@ -1,0 +1,228 @@
+/* 
+  Estilos generales para el cuerpo de la página
+*/
+body {
+    /* Fuente utilizada en toda la página */
+    font-family: 'Roboto', sans-serif;
+    
+    /* 
+      Fondo con un degradado lineal que va de abajo hacia arriba:
+      - Desde un blanco semi-transparente en la parte inferior
+      - Hasta un azul semi-transparente en la parte superior
+      Además, se añade una imagen de fondo opcional.
+    */
+    background: 
+        linear-gradient(to top, rgba(255, 255, 255, 0.8) 0%, rgba(100, 149, 237, 0.8) 100%), 
+        url('ruta-de-la-imagen-de-fondo.jpg') no-repeat center center fixed;
+    
+    /* Ajusta la imagen de fondo para que cubra todo el viewport sin distorsionarse */
+    background-size: cover;
+    
+    /* Altura del cuerpo igual a la altura del viewport */
+    height: 100vh;
+    
+    /* Utiliza Flexbox para centrar el contenido horizontal y verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Elimina los márgenes y padding por defecto */
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+  Estilos para el contenedor del formulario de inicio de sesión
+*/
+#formlogin {
+    /* Ancho fijo del formulario */
+    width: 350px;
+    
+    /* Padding interno para espaciar el contenido del borde */
+    padding: 40px 30px;
+    
+    /* Fondo blanco con un 90% de opacidad para transparencia */
+    background: rgba(255, 255, 255, 0.9);
+    
+    /* Bordes redondeados */
+    border-radius: 10px;
+    
+    /* Sombra suave para dar efecto de elevación */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    
+    /* Centra el texto dentro del formulario */
+    text-align: center;
+    
+    /* Transiciones suaves para transformaciones y sombras al interactuar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 
+  Efecto al pasar el cursor sobre el formulario
+*/
+#formlogin:hover {
+    /* Mueve ligeramente el formulario hacia arriba */
+    transform: translateY(-5px);
+    
+    /* Aumenta la sombra para un efecto más pronunciado */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+  Estilos para el logo dentro del formulario
+*/
+#logo {
+    /* Ancho aumentado para un logo más prominente */
+    width: 300px;
+    
+    /* Espacio inferior para separar el logo de los campos del formulario */
+    margin-bottom: 20px;
+}
+
+/* 
+  Estilos comunes para inputs y botones
+*/
+input, button {
+    /* Ancho completo para que ocupen todo el espacio disponible */
+    width: 100%;
+    
+    /* Padding vertical para mayor comodidad al interactuar */
+    padding: 12px 0;
+    
+    /* Margen superior e inferior para espaciar los elementos */
+    margin: 15px 0;
+    
+    /* Bordes redondeados */
+    border-radius: 5px;
+    
+    /* Borde por defecto */
+    border: 1px solid #ccc;
+    
+    /* Incluye el padding y el borde en el ancho total del elemento */
+    box-sizing: border-box;
+    
+    /* Tamaño de fuente adecuado para legibilidad */
+    font-size: 16px;
+}
+
+#feedback{
+   color:red;
+}
+
+/* 
+  Estilos específicos para los campos de entrada (inputs)
+*/
+input {
+    /* Color de fondo suave */
+    background-color: #f9f9f9;
+    
+    /* Borde más grueso para resaltar el campo */
+    border: 2px solid #ccc;
+    
+    /* Color del texto dentro del input */
+    color: #333;
+    
+    /* Transición suave para cambios en el borde al enfocar */
+    transition: border-color 0.3s ease;
+}
+
+/* 
+  Efecto al enfocar un input
+*/
+input:focus {
+    /* Cambia el color del borde al azul para indicar enfoque */
+    border-color: #007BFF;
+    
+    /* Elimina el outline por defecto del navegador */
+    outline: none;
+}
+
+/* 
+  Color de los placeholders dentro de los inputs
+*/
+input::placeholder {
+    /* Color gris claro para los textos de placeholder */
+    color: #999;
+}
+
+/* 
+  Estilos específicos para los botones
+*/
+button {
+    /* Color de fondo azul */
+    background-color: #007BFF;
+    
+    /* Color del texto blanco */
+    color: white;
+    
+    /* Elimina el borde por defecto */
+    border: none;
+    
+    /* Fuente en negrita para destacar el texto del botón */
+    font-weight: bold;
+    
+    /* Espaciado entre letras para mejor legibilidad */
+    letter-spacing: 0.5px;
+    
+    /* Cursor de mano al pasar sobre el botón */
+    cursor: pointer;
+    
+    /* Transiciones suaves para cambios en el color de fondo y transformaciones */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* 
+  Efecto al pasar el cursor sobre el botón
+*/
+button:hover {
+    /* Oscurece el color de fondo al pasar el cursor */
+    background-color: #0056b3;
+    
+    /* Mueve ligeramente el botón hacia arriba */
+    transform: translateY(-2px);
+}
+
+/* 
+  Efecto al hacer clic en el botón
+*/
+button:active {
+    /* Restablece la posición del botón */
+    transform: translateY(0);
+}
+
+/* 
+  Media query para adaptar el diseño en pantallas pequeñas (máximo 600px de ancho)
+*/
+@media (max-width: 600px) {
+    /* 
+      Ajusta el ancho del formulario al 90% del contenedor
+      y reduce el padding para optimizar el espacio en pantallas pequeñas
+    */
+    #formlogin {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
+#toast{
+	width:400px;
+	height:50px;
+	line-height:50px;
+	background:#6495ED;
+	color:white;
+	border-radius:100px;
+	position:absolute;
+	left:50%;
+	margin-left:-200px;
+	bottom:100px;
+	text-align:center;
+	opacity:0;
+}
+.animado{
+	animation: aparece 10s;
+}
+@keyframes aparece{
+	0%{display:block;opacity:0;}
+	10%{display:block;opacity:1;}
+	90%{display:block;opacity:1;}
+	100%{display:block;opacity:0;}
+}

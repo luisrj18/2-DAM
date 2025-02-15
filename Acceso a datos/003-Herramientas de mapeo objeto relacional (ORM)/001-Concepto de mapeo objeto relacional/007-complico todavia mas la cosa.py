@@ -12,7 +12,7 @@ class Persona:
 
 personas = []
 
-correosjosevicente = [
+correosluis = [
         {
         'tipo':'personal',
         'valor':'luisroji@correo.com'

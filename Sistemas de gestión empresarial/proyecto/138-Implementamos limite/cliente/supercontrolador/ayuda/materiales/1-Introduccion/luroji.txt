@@ -1,0 +1,9 @@
+Acceso y autenticación
+Para empezar a usar LUROJI:
+
+Abra un navegador web compatible (Chrome, Edge o Safari).
+Ingrese la URL proporcionada por el administrador del sistema.
+Introduzca su usuario y contraseña en la pantalla de inicio.
+Haga clic en "Login" para ingresar.
+Si los datos son correctos, verá un mensaje verde de confirmación y será redirigido al escritorio principal.
+Si hay un error, aparecerá un mensaje rojo indicando "Acceso incorrecto".

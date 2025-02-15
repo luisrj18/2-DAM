@@ -27,7 +27,7 @@
 			const inicial = performance.memory.usedJSHeapSize;
 			
 			const sintransparencia8 = new Uint8Array(sintransparencia);
-		   setTimeout(() => {
+		    setTimeout(() => {
 		     const final = performance.memory.usedJSHeapSize;
 		     let memoriaUtilizada = final - inicial;
 		     console.log(memoriaUtilizada);

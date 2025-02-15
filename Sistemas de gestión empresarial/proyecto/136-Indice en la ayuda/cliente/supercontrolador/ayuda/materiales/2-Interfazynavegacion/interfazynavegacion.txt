@@ -1,0 +1,14 @@
+ Escritorio Principal
+Una vez dentro del sistema, el escritorio principal le permitirá acceder a las distintas funciones de la aplicación mediante botones y accesos directos.
+
+-Menú de navegación
+Desde el escritorio, podrá seleccionar las distintas secciones del sistema según sus necesidades:
+
+Clientes: Permite agregar, editar y administrar clientes.
+Productos: Gestión de inventario, actualización de precios y descripciones.
+Pedidos: Creación, seguimiento y actualización de pedidos.
+-Supercontrolador
+Cuando seleccione una funcionalidad (por ejemplo, "Clientes"), LUROJI lo dirigirá al Supercontrolador, un sistema centralizado que organiza y ejecuta todas las operaciones relacionadas con la función elegida.
+
+-Formularios y Acciones
+Cada sección contiene formularios que permiten insertar, editar o eliminar datos fácilmente. También ofrece herramientas de búsqueda para localizar información de manera rápida.

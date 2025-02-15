@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+  <customerName>Luis</customerName>
+  <Apellidos>Rojas</Apellidos>
+  <Email>aaaaaa</Email>
+  <invoiceLines>
+    <item0>
+      <description>aa</description>
+      <quantity>1</quantity>
+      <price>25</price>
+    </item0>
+  </invoiceLines>
+</root>

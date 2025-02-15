@@ -1,0 +1,12 @@
+-No puedo acceder a mi cuenta
+
+Asegúrese de que su usuario y contraseña sean correctos.
+Si olvidó su contraseña, contacte con el administrador.
+
+-Los datos no se actualizan
+
+Intente limpiar la caché de su navegador.
+
+-La página no carga
+
+Verifique su conexión a Internet.

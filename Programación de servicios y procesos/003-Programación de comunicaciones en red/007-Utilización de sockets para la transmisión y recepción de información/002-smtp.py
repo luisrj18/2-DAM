@@ -5,13 +5,13 @@ from email.mime.text import MIMEText
 # Configuración de la cuenta
 smtp_server = "smtp.ionos.es"  # Ejemplo: 'smtp.gmail.com' para Gmail
 smtp_port = 587  # Normalmente 587 para SMTP con TLS
-username = "dam@jocarsa.com"
+username = "dam@luroji.com"
 password = "TAME123$"
 
 # Crear el mensaje
 msg = MIMEMultipart()
 msg['From'] = username
-msg['To'] = "info@josevicentecarratala.com"
+msg['To'] = "luisroji.10@gmail.com"
 msg['Subject'] = "Asunto del correo desde Python"
 # Cuerpo del mensaje
 body = "Este es el cuerpo del correo."

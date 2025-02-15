@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Configuración de la cuenta
-username = "dam@jocarsa.com"
+username = "dam@luroji.com"
 password = "TAME123$"
 imap_server = "imap.ionos.es"
 smtp_server = "smtp.ionos.es"  

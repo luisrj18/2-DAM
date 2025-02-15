@@ -3,7 +3,7 @@ import email
 from email.header import decode_header
 
 # Configuración de la cuenta
-username = "dam@jocarsa.com"
+username = "dam@luroji.com"
 password = "TAME123$"
 imap_server = "imap.ionos.es"  # Ejemplo: 'imap.gmail.com' para Gmail
 
