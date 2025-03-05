@@ -9,9 +9,9 @@
 			private $conexion;																										// 
 			
 			public function __construct() {																				// Creo un constructor
-				  $this->servidor = "localhost";																			// Le doy los datos de acceso a la base de datos
-				  $this->usuario = "crimson";																		// 
-				  $this->contrasena = "crimson";																	// 
+				  $this->servidor = "51.20.253.247";																			// Le doy los datos de acceso a la base de datos
+				  $this->usuario = "root";																		// 
+				  $this->contrasena = "root";																	// 
 				  $this->basededatos = "crimson";																// 
 				  
 				  $this->conexion = mysqli_connect(
